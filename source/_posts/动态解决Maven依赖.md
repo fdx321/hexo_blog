@@ -5,6 +5,19 @@ tags:
 - Maven
 categories: 博客
 ---
+```xml
+<dependency>
+  <groupId>org.apache.maven</groupId>
+  <artifactId>maven-core</artifactId>
+  <version>3.0.3</version>
+</dependency>
+<dependency>
+  <groupId>com.jcabi</groupId>
+  <artifactId>jcabi-aether</artifactId>
+  <version>0.7.19</version>
+</dependency>
+```
+<!--more-->
 ```java
 import java.io.File;
 import java.io.FileReader;
@@ -105,16 +118,4 @@ public class MavenUtils {
         System.out.println("classpath = " + classpath);
     }
 }
-```
-```xml
-<dependency>
-  <groupId>org.apache.maven</groupId>
-  <artifactId>maven-core</artifactId>
-  <version>3.0.3</version>
-</dependency>
-<dependency>
-  <groupId>com.jcabi</groupId>
-  <artifactId>jcabi-aether</artifactId>
-  <version>0.7.19</version>
-</dependency>
 ```
