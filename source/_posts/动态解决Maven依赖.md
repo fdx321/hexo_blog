@@ -119,4 +119,7 @@ public class MavenUtils {
     }
 }
 ```
+<<<<<<< HEAD
+=======
 
+>>>>>>> ece740841b8d3a1a40965f8ef3f7547a4df37b93
