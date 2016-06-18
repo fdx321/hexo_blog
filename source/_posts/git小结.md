@@ -16,6 +16,7 @@ git clone <repo的链接>
 # 克隆到指定目录
 git clone <repo的链接> <dir>
 ```
+<!--more-->
 ```python
 # 配置用户名，邮件，不加global则只配置当前repo
 $ git config --global user.name <name>
@@ -82,7 +83,7 @@ $ git merge <branch>
 ![image1](/images/git小结_7.png)
 <style>
 img[alt="image1"] {
-  width:400px;
+  width:300px;
   display: block;
 }
 </style>
