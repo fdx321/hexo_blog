@@ -2,7 +2,7 @@
 menu:
   主页: /
   所有文章: /archives
-  # 随笔: /tags/随笔
+  #书单: /2016/09/08/书单/
 
 # SubNav
 subnav:
@@ -31,11 +31,11 @@ animate: true
 open_in_new: true
 
 # Miscellaneous
-google_analytics: ''
+google_analytics: true
 favicon: /favicon.png
 
 #你的头像url
-avatar: http://ww1.sinaimg.cn/mw690/6a2787d4jw1eh981cl8zpj20c80c8dh6.jpg 
+avatar: http://ww1.sinaimg.cn/mw690/6a2787d4jw1eh981cl8zpj20c80c8dh6.jpg
 #是否开启分享
 share: true
 #是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
@@ -49,7 +49,7 @@ tagcloud: true
 #friends: false
 #开启——
 friends:
-  虎扑篮球: http://nba.hupu.com/ 
+  虎扑篮球: http://nba.hupu.com/
   伯乐在线: http://blog.jobbole.com/
   ImportNew: http://www.importnew.com/
 
@@ -57,4 +57,4 @@ friends:
 #不开启——
 #aboutme: false
 #开启——
-aboutme: 非技术狂热者，资浅工程师.
+aboutme: 某互联网金融公司资浅工程师.
