@@ -244,7 +244,7 @@ mysql> select * from test;
 ```
 
 ### **5. 其他**
-在写测试代码的时候遇到了一个关于AOP的问题，可以看到我的测试代码，每个事务都是一个新的class中写的。为什么不这样写呢？
+在写测试代码的时候遇到了一个关于AOP的问题，可以看到我的测试代码，每个事务都是在一个新的class中写的。为什么不像下面这样写呢？
 ```java
 @Service
 public class MysqlTest01 {
@@ -264,6 +264,8 @@ public class MysqlTest01 {
 ```
 这是因为在Spring的AOP中，test01调用test02, test02是不会被AOP截获的，所以也不会被Spring进行事务管理。原因是Spring AOP的实现本质是通过动态代理的方式去执行真正的方法，然后在代理类里面做一些额外的事情。当通过别的类调用MysqlTest01中的test01方法时，因为使用了Spring的DI，注入的其实是一个MysqlTest01的一个代理类，而通过内部方法调用test02时，则不是。
 
+### **6. Reference**
+* [Spring Framework Reference Documentation](http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle)
 
 <style>
 img[title="aaa"] {
