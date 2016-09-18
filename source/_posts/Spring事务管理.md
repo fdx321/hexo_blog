@@ -58,7 +58,7 @@ public class DefaultFooService{
     }
 }
 ```
-### **3. 事务配置**
+### **3. 事务属性**
 引用官方文档的表格
 ![bbb](/images/Spring事务管理_2.png)
 * value，在有多个事务管理器存在的情况下，用于标识使用哪个事务管理器
