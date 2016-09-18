@@ -91,7 +91,6 @@ mysql> select * from test;
 3 rows in set (0.00 sec)
 ```
 * **PROPAGATION_REQUIRED**
-样例代码
 
 ```java
 @Service
