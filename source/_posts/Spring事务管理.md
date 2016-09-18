@@ -1,4 +1,4 @@
-title: Spring事务控制
+title: Spring事务管理
 date: 2016-09-18 18:57:15
 tags:
 - Spring
