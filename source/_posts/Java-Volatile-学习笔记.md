@@ -74,14 +74,14 @@ public class Test{
 [5] [Managing volatility](https://www.ibm.com/developerworks/java/library/j-jtp06197/index.html)
 
 <style>
-img[alt="aaa"] {
-  width:500px;
-  width:500px;
+img[title="aaa"] {
+  width:400px;
+  width:400px;
   display: block;
 }
-img[alt="bbb"] {
+img[title="bbb"] {
   width:500px;
-  height:100px;
+  height:150px;
   display: block;
 }
 </style>
