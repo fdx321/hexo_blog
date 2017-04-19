@@ -11,7 +11,7 @@ CPU的计算性能已经远远超于内存的访问性能，所以芯片设计�
 *图片来源 http://mechanical-sympathy.blogspot.com*
 
 Java内存模型也类似，下面是一个更加抽象的图：
-![aaa](/images/Java-Volatile-学习笔记_1.png)
+![bbb](/images/Java-Volatile-学习笔记_1.png)
 *图片来源 http://tech.meituan.com/*
 
 这个模型存在一个问题，当多个线程共享主内存中的一个数据时，各个CPU的缓存有可能是不一样的，存在数据不一致的问题。<!--more-->
@@ -25,8 +25,7 @@ Java内存模型[3]中的几种Happens-Before Relationship，有一条就是针�
 
 从这条规则就可以看出，为了确保所有线程看到的同个变量的值是一致的，可以使用volatile变量，也可以用锁。
 
-**注意** volatile仅仅保证数据的**可见性**，并不能保证**互斥性**, 下面这段代码是有问题，两个线程功能操作count, 最后的结果是不可预见的, volatile并
-不能保证count++是一个原子操作。
+**但是** volatile仅仅保证数据的**可见性**，并不能保证**互斥性**, 下面这段代码是有问题的，两个线程同时操作count, 最后的结果是不可预见的, volatile并不能保证count++是一个原子操作。
 ```java
 public class Test{
   public static volatile int count = 0;
@@ -57,7 +56,7 @@ public class Test{
 * the "volatile bean" pattern
 * The cheap read-write lock trick
 
-对这些场景下volatile的使用掌握的并不是很透彻，希望自己以后再看开源代码的时候遇到volatile的时候会重点去关注一下。
+对这些场景下volatile的使用我掌握的还不是很透彻，希望自己以后再看开源代码的时候遇到volatile的时候会重点去关注一下。
 
 
 
