@@ -121,7 +121,7 @@ ReentrantLock 是基于 AbstractQueuedSynchronizer （简称AQS）实现的，AQ
 [2] [深入JVM锁机制2-Lock](http://blog.csdn.net/chen77716/article/details/6641477)
 [3] [聊聊并发（二）Java SE1.6中的Synchronized](http://ifeve.com/java-synchronized/)
 [4] JDK 1.8 源码和注释
-[5] [自旋锁、排队自旋锁、MCS锁、CLH锁]http://coderbee.net/index.php/concurrent/20131115/577
+[5] [自旋锁、排队自旋锁、MCS锁、CLH锁](http://coderbee.net/index.php/concurrent/20131115/577)
 [6] [java锁的种类以及辨析（一）：自旋锁](http://ifeve.com/java_lock_see1/)
 [7] [Java锁的种类以及辨析（二）：自旋锁的其他种类](http://ifeve.com/java_lock_see2/)
 [8] [AbstractQueuedSynchronizer的介绍和原理分析](http://ifeve.com/introduce-abstractqueuedsynchronizer/)
