@@ -22,7 +22,7 @@ tomcat8.0-source-research
     README.md
     tomcat-study.iml
 ```
-* 只有 tomcat-code（源码） 和 catalina-home （配置、lib等）是运行工程必须的
+* 只有 tomcat-code（源码） 和 catalina-home （配置、lib等）是运行工程必须的 <!--more-->
 * jsp-demo 和 springmvc-demo 是我为了方便学习 JSP 和 Servlet 机制写的两个简单的工程，可以用 ```mvn package``` 打成 war 包后放到 ./catalina-home/webapps 目录下使用。
 * PDF-resource（tomcat 的书籍），tomcat-8.0-doc (文档)
 
