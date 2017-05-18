@@ -62,7 +62,7 @@ public class DefaultFooService{
 引用官方文档的表格
 ![bbb](/images/Spring事务管理_2.png)
 * value，在有多个事务管理器存在的情况下，用于标识使用哪个事务管理器
-* isolation，事务的隔离级别，默认是Isolation.DEFAULT，这个DEFAULT是和具体使用的数据库相关的。关于隔离级别，可以参考[MySQL事务学习总结](http://0.0.0.0:4000/2016/09/09/MySQL%E4%BA%8B%E5%8A%A1%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/#more)
+* isolation，事务的隔离级别，默认是Isolation.DEFAULT，这个DEFAULT是和具体使用的数据库相关的。关于隔离级别，可以参考[MySQL事务学习总结](https://fdx321.github.io/2016/09/09/MySQL%E4%BA%8B%E5%8A%A1%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/#more)
 * readOnly, 是否只读，如果配置了true，但是方法里使用了update，insert语句，会报错。对于只读的事务，配置为true有助于提高性能。
 * rollbackFor, noRollbackFor. Spring的声明式事务的默认行为是如果方法抛出RuntimeException或者Error,则事务会回滚，对于其他的checked类型的异常，不会回滚。如果想改变这种默认行为，可以通过这几个属性来配置。
 * propagation, 后面会具体讲。
