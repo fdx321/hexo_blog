@@ -1,8 +1,8 @@
 title: 【Tomcat学习笔记】组件声明周期
 date: 2017-05-18 08:58:05
 tags:
-- Tomcat
 - Java
+- Tomcat
 ---
 Tomcat 里很多组件都实现了生命周期的接口，大到 Server、Service、Engine、Host、Context、Wrapper 这样的关键组件，小到 Connector、Valve 这样的小组件。
 <img src="/images/【Tomcat学习笔记】组件声明周期_1.svg"/>
