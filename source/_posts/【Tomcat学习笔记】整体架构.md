@@ -63,7 +63,7 @@ Tomcat的整体架构其实和 server.xml 这个配置文件是可以对应起�
 【图片来源】( http://gearever.iteye.com/blog/1532822 )， Host对应www.mydomain.com那一层，在 Tomcat 启动之前就知道的。Context 对应 app 那一层，这个 app 是 Tomcat 在启动过程中，扫描 catalina-home/webapps（默认是这个目录） 这个目录的时候才知道有哪几个应用需要部署，才创建对应的 Context, 所以这个是可以不在 server.xml 中配置的。可以理解成一个 Java 应用 对应一个 Context. 那么 Wrapper 也是在扫描了待部署应用里面的内容后才创建的。Engine 和 Host 则是启动过程中通过解析 server.xml 的时候创建的。
 * Engine、Host、Context、Wrapper 四种 Container 都可以配置 **Valve**，即使不配置，每个 Container 代码里都有默认的Valve（StandardEngineValve, StandardHostValve ...）是处理请求的时候必须经过的。关于 Pipeline 和 Valve，就是一个水管中间有多个阀门，每个数据流过来都在阀门的地方被处理一下。 四个容器的Pipeline串起来，可以用张图来描述一下：
 <img src="/images/【Tomcat学习笔记】整体架构_4.svg"/>
-实际代码中并没有这样一个 Pipeline 的数据结构或者类， 这只是一个抽象概念，代码里就是类似于链表的形式，getNext().getNext()这样.请求request进到 Engine 后，会经过几个Valve的处理，然后会选择一个 Host，进入它的 Valve 链里进行处理，后面也是按这种方式进行，响应数据最后也是按这个路径原路返回的。和现实中的 Pipeline最大的不同是，现实中的水管谁到了这里之后是分流分到下面几个细的水管，这里不是，这是是选择一根Pipeline。
+实际代码中并没有这样一个 Pipeline 的数据结构或者类， 这只是一个抽象概念，代码里就是类似于链表的形式，getNext().getNext()这样.请求request进到 Engine 后，会经过几个Valve的处理，然后会选择一个 Host，进入它的 Valve 链里进行处理，后面也是按这种方式进行，响应数据最后也是按这个路径原路返回的。和现实中的 Pipeline 最大的不同是，现实中的水管，水是分流到几个细的水管，这里不是，这里是选择一根 Pipeline往下走。
 
 
 #### Reference
