@@ -113,3 +113,6 @@ public void fireLifecycleEvent(String type, Object data) {
 
 ```
 init、start、stop、destroy 这些方法都会调用各自的 initInternal、starttInternal、... 方法，internal 方法由具体的组件(LifecycleBase的子类)自己实现. 除了调用 internal 方法，这个方法的主要功能就是，设置状态，触发事件。触发事件的时候会遍历数组中的所有Listener，调用它们的lifecycleEvent方法。
+
+##### .
+** 以上皆是阅读源码 https://github.com/fdx321/tomcat8.0-source-research 所得 **

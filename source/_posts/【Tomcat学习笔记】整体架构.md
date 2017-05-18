@@ -66,7 +66,8 @@ Tomcat的整体架构其实和 server.xml 这个配置文件是可以对应起�
 实际代码中并没有这样一个 Pipeline 的数据结构或者类， 这只是一个抽象概念，代码里就是类似于链表的形式，getNext().getNext()这样.请求request进到 Engine 后，会经过几个Valve的处理，然后会选择一个 Host，进入它的 Valve 链里进行处理，后面也是按这种方式进行，响应数据最后也是按这个路径原路返回的。和现实中的 Pipeline 最大的不同是，现实中的水管，水是分流到几个细的水管，这里不是，这里是选择一根 Pipeline往下走。
 
 
-#### Reference
+##### .
+** 以上皆是阅读源码 https://github.com/fdx321/tomcat8.0-source-research 所得 **
 
 <style>
 img[title="400"] {

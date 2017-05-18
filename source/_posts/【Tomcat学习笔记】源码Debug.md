@@ -38,3 +38,6 @@ tomcat8.0-source-research
 
 
 然后就可以从 Bootstrap 类的 main 方法开始一步步Debug了。
+
+##### .
+** 以上皆是阅读源码 https://github.com/fdx321/tomcat8.0-source-research 所得 **
