@@ -14,4 +14,5 @@ tags:
 一般情况下，catalina.home 和 catalina.base 指向同一个这样的目录. 但有时候我们需要在一台机器上运行多个 Tomcat 实例，没必要安装多个 Tomcat. 只需要配置多个工作目录，共享一个安装目录就可以了。Tomcat 运行需要 conf、lib、logs、。。等这些目录，对每个实例，可以单独弄个目录，在里面创建好 conf、lib、logs 这些目录，然后配置好各自的 catalina.base 就可以了。
 *完了，扯着扯着就跑题了，感觉写不完了，（这里我是想加个表情的，于是发现 hexo 是可以换个支持表情的 markdown 渲染器的，然而我懒得玩了）*
 
-### 2. 未完待续。。
+### 2. 执行 Bootstrap 类的 main 方法
+这个方法里主要是调用 init 完成各种 classLoader（classLoader这个东西还是有点意思的，后面会有笔记具体分析） 的创建，实例化 Catalina ，然后根据入参来执行 Catalina 的 start、stop、... 等方法。
