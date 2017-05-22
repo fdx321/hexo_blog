@@ -1,4 +1,4 @@
-title: 【Tomcat学习笔记】启动流程分析
+title: 【Tomcat学习笔记】启动流程分析--总体流程
 date: 2017-05-19 13:35:11
 tags:
 - Java
@@ -87,11 +87,13 @@ digester.addSetNext("Server/Service","addService","org.apache.catalina.Service")
 
 ### **5.它们是如何一层一层完成初始化和启动的。**
 已StandardServer为例，
-![300](/images/【Tomcat学习笔记】启动流程分析_1.png)
+![300](/images/【Tomcat学习笔记】启动流程分析_2.png)
 调用**getServer().init()**方法后，会进入 LifecycleBase#init，这个方法主要是设置生命周期以及触发相应的事件，之后会调用 StandardServer#init()，它首先会调用 LifecycleMBeanBase#init 把自己注册到MBeanServer中(JMX后面会具体说)，然后完成 StandardServer 自己初始化需要做的事情，最后在遍历数组，依次调用各个service的init方法。 如下面的时序图所示：
 <img src="/images/【Tomcat学习笔记】启动流程分析_2.svg"/>
 到servie的init方法后，也是类似的流程，一层一层往下做。
 
+
+1~5 是一个大概的启动过程，后面会再更具体的分析每个组件在 init 和 start 的过程中做了什么事情。
 
 ##### .
 ** 以上皆是阅读源码 https://github.com/fdx321/tomcat8.0-source-research 所得 **
