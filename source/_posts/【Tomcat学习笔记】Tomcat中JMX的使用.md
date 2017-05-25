@@ -1,5 +1,5 @@
-title: 【Tomcat学习笔记】一次请求处理过程
-date: 2017-05-30 18:04:04
+title: 【Tomcat学习笔记】Tomcat中JMX的使用
+date: 2017-05-24 20:19:44
 tags:
 - Java
 - Tomcat
