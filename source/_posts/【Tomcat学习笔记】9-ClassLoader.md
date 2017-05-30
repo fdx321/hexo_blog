@@ -1,4 +1,4 @@
-title: 【Tomcat学习笔记】ClassLoader
+title: 【Tomcat学习笔记】9-ClassLoader
 date: 2017-05-30 18:03:39
 tags:
 - Java
@@ -93,7 +93,7 @@ WebappClassLoaderBase#loadClass 方法实现了整个加载过程，主要有以
 ### **参考文献**
 * [图解Tomcat类加载机制](http://www.cnblogs.com/xing901022/p/4574961.html?utm_source=tuicool)
 * [深入分析Java ClassLoader原理](http://blog.csdn.net/xyang81/article/details/7292380)
-* [配置Tomcat的Loader组件（Nested Component之三）] (http://www.10tiao.com/html/308/201701/2650076390/1.html)
+* [配置Tomcat的Loader组件（Nested Component之三）](http://www.10tiao.com/html/308/201701/2650076390/1.html)
 * [Tomcat深入研究文章之十一(Tomcat classloader源码分析)](http://www.10tiao.com/html/308/201603/402159117/1.html)
 * [Tomcat深入研究文章之十二(WebappClassLoader加载过程)](http://www.10tiao.com/html/308/201603/402165779/1.html)
 * [Tomcat8+引入的并发ClassLoader](http://www.10tiao.com/html/308/201701/2650076391/1.html)
