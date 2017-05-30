@@ -73,7 +73,7 @@ public void start() throws LifecycleException {
     }
 }
 ```
-默认情况都是使用lWebappClassLoader， 在 Tomcat 8+ 中，还加入了 ParallelWebappClassLoader，可以并行的加载类。用并行加载，需要在server.xml中配置loaderClass，但是一般情况下，这种需求不大，得要多大的项目才有那么多类需要并行来加载啊。关于并行类加载器，有兴趣可以看 [Tomcat8+引入的并发ClassLoader](http://www.10tiao.com/html/308/201701/2650076391/1.html)
+默认情况都是使用lWebappClassLoader， 在 Tomcat 8+ 中，还加入了 ParallelWebappClassLoader，可以并行的加载类。用并行加载，需要在conf/context.xml中配置loaderClass，但是一般情况下，这种需求不大，得要多大的项目才有那么多类需要并行来加载啊。关于并行类加载器，有兴趣可以看 [Tomcat8+引入的并发ClassLoader](http://www.10tiao.com/html/308/201701/2650076391/1.html)
 
 ### **Tomcat的WebappClassLoader加载类的过程**
 WebappClassLoaderBase#loadClass 方法实现了整个加载过程，主要有以下操作
