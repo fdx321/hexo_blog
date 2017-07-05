@@ -20,7 +20,7 @@ if(isLogin) {
     session.setAttribute("userId", userId);
 }
 ```
-
+<!--more-->
 【2】在需要判断登录态的方法中
 
 ```java
