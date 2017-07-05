@@ -176,7 +176,7 @@ public void processPersistenceChecks() {
 ### **6. 分布式系统中自己实现Session**
 当系统达到一定规模后，将session放在JVM 内存中肯定是不行，存储在文件或DB中性能也不够。简单点的方案是可以自己实现Store接口，整个RedisStore之类的，将session放到缓存中,然后在web.xml中配置使用该Store。
 
-更多的做法是自己实现一个分布式session应用, 这样可以更灵活，更高可用，想怎么玩玩怎么玩（比如sessionId 就不一定放在 cookie 中啊，后端可以吐给前端，它们拿去自己存储，放到sessionStorage、localStorages甚至indexeddb中，只要下次请求带过来就行。当然，不知道这么做有什么意思，纯粹瞎YY，哈哈）
+更多的做法是自己实现一个分布式session应用, 这样可以更灵活，更高可用，想怎么玩玩怎么玩（比如sessionId 就不一定放在 cookie 中啊，后端可以吐给前端，它们拿去自己存储，放到sessionStorage、localStorages甚至indexeddb中，只要下次请求带过来就行。当然，不知道这么做有什么意义，纯粹瞎YY。但很多东西，知道原理之后不就可以脑洞大开了吗）
 
 
 ##### .
