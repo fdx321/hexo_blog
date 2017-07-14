@@ -32,7 +32,7 @@ protocol="org.apache.coyote.http11.Http11Nio2Protocol".
     * org.apache.coyote.http11.Ajp11Nio2Protocol
     * org.apache.coyote.http11.Ajp11AprProtocol
 
-AJP 的处理我并没有去细看，但大的代码结构基本和 HTTP 的处理类似。后面重点看下 HTTP 连接的几种处理方式。
+AJP 的处理我并没有去细看，但大的代码结构基本和 HTTP 的处理类似。后面重点看下 HTTP 1.1 连接的几种处理方式([我看的这个版本还不支持Http 2.0](https://stackoverflow.com/questions/30855281/tomcat-support-for-http-2-0/37889873#37889873))。
 
 ### **HTTP BIO，同步阻塞**
 ![400](/images/【Tomcat学习笔记】Connector-1.png)
