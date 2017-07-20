@@ -43,14 +43,14 @@ Motan 的工程结构也很清晰：
 * motan-manager，管理后台，可用于运维和监控
 * motan-registry-consul, consul 注册中心
 * motan-registry-zookeeper， zookeeper注册中心
-* motan-springsupport， Spring 继承
+* motan-springsupport， Spring 集成
 * motan-transport-netty， netty 网络通信
 
 前期，我主要会关注 motan-core，motan-registry-consul， motan-springsupport， motan-transport-netty 这四个 package，其他 package 不影响我研究整个RPC内幕。
 
 
 ##### .
-** 以上皆是阅读源码 https://github.com/weibocom/motan （tag 0.3.1）所得 **
+** 以上皆是阅读源码 https://github.com/weibocom/motan （tag 0.3.1）所得，文中贴的代码或配置有所删减 **
 
 
 <style>
