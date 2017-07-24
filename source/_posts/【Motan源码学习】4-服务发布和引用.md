@@ -139,6 +139,8 @@ public synchronized void notify(URL registryUrl, List<URL> urls) {
                     application="myMotanDemo" protocol="motan" registry="registry"
                     id="motantestClientBasicConfig" />
 ```                        
+**2.如何查看一个应用提供了哪些服务**
+除了看注册中心、运维后台、代码，还有没有其他方式能够看一个应用提供了哪些服务？其实我是想知道 Motan 有没有提供一个功能，提供一个 URL 就可以查看一个应用提供的服务。看了代码，好像并没有。
 
 
 ##### .
