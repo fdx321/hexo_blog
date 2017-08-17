@@ -5,11 +5,12 @@ tags:
 - RocketMQ
 ---
 ### **1. Namesrv 简介**
-Namesrv 可以理解为一个注册中心:
-![600](/images/【RocketMQ源码学习】2-Namesrv_1.png)
-整个Namesrv的代码非常简单，主要包含两块功能：
+Namesrv 可以理解为一个注册中心, 整个Namesrv的代码非常简单，主要包含两块功能：
 * 管理一些 KV 的配置
 * 管理一些 Topic、Broker的注册信息
+<!--more-->
+
+![600](/images/【RocketMQ源码学习】2-Namesrv_1.png)
 
 ### **2. Namesrv 启动过程**
 启动过程主要涉及 NamesrvStartup/NamesrvController 两个类， NamesrvStartup 负责解析命令行的一些参数到各种 Config 对象中（NamesrvConfig/NettyServerConfig等），如果命令行参数中带有配置文件的路径，也会从配置文件中读取配置到各种 Config 对象中，然后初始化 NamesrvController，配置shutdownHook, 启动  NamesrvController。 NamesrvController 会去初始化和启动各个组件，主要是:
@@ -18,7 +19,7 @@ Namesrv 可以理解为一个注册中心:
 * 启动各种 scheduled task.
 
 不仅仅 Namesrv 是这样，其他模块在启动过程中也都是 startup/controller/config 一起完成这样的套路。
-<!--more-->
+
 
 ### **3. Namesrv 主要组件**
 * Processor 线程池，nettyServer 接收到请求后，封装成任务提交到该线程池。
