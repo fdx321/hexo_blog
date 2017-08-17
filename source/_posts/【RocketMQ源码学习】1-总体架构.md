@@ -44,7 +44,7 @@ Consumer 和 Broker 之间其实还可以加一个 filtersrv，用来做消费�
 Producer Group、Consumer Group 和 Topic 之间并没有强制的某种关系，一个 Producer Group 可以发多个 Topic 的消息，一个 Consumer Group 也可以消费多个 Topic 的消息。一个Consumer Group 可以消费来自多个 Producer Group的消息，一个 Producer Group 的消息也可以被多个 Consumer Group 消费。
 
 
-### **5.Reference**
+### **Reference**
 * [RocketMQ 原理简介](http://alibaba.github.io/RocketMQ-docs/document/design/RocketMQ_design.pdf)
 * [分布式开放消息系统(RocketMQ)的原理与实践](http://www.jianshu.com/p/453c6e7ff81c)
 
