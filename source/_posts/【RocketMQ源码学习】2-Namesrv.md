@@ -110,7 +110,7 @@ if (addrList != null && !addrList.isEmpty()) {
 
 
 ##### -
-** 以上所有扯淡都是基于源码 https://github.com/apache/incubator-rocketmq (*tag:rocketmq-all-4.1.0-incubating*)  **
+** 以上所有扯淡都是基于源码 https://github.com/apache/incubator-rocketmq (*tag:rocketmq-all-4.1.0-incubating*)  ** 所贴代码有所删减。
 
 <style>
 img[title="300"] {

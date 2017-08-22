@@ -50,7 +50,7 @@ Producer Group、Consumer Group 和 Topic 之间并没有强制的某种关系�
 
 
 ##### -
-** 以上所有扯淡都是基于源码 https://github.com/apache/incubator-rocketmq (*tag:rocketmq-all-4.1.0-incubating*)  **
+** 以上所有扯淡都是基于源码 https://github.com/apache/incubator-rocketmq (*tag:rocketmq-all-4.1.0-incubating*)  ** 所贴代码有所删减。
 
 <style>
 img[title="300"] {

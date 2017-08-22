@@ -20,7 +20,7 @@ Worker 拿到网络数据后，就交给 Pipeline，从 Head 到 Tail 一个个 
 关于 Netty 的一些关键知识点，[Netty学习笔记](https://fdx321.github.io/2016/11/07/Netty%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/) 中做了些总结。
 
 ##### -
-** 以上所有扯淡都是基于源码 https://github.com/apache/incubator-rocketmq (*tag:rocketmq-all-4.1.0-incubating*)  **
+** 以上所有扯淡都是基于源码 https://github.com/apache/incubator-rocketmq (*tag:rocketmq-all-4.1.0-incubating*)  ** 所贴代码有所删减。
 
 <style>
 img[title="300"] {
