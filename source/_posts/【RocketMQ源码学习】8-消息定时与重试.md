@@ -56,6 +56,10 @@ ScheduleMessageService 是 broker 中一个单独的线程，它会不停的去�
 ```java
 msgInner.setTopic(msgInner.getProperty(MessageConst.PROPERTY_REAL_TOPIC));
 ```
+每个delayLevel对应要delay的时间是通过这个变量关联起来的，这个变量在 MessageStoreConfig 中，是可配置的。
+```java
+private String messageDelayLevel = "1s 5s 10s 30s 1m 2m 3m 4m 5m 6m 7m 8m 9m 10m 20m 30m 1h 2h";
+```
 
 Consumer端在启动的时候，就订阅了 %RETRY%+consumerGroup 这个 topic 的消息，所以它会一直去长轮询这类消息，拿到消息后，将Topic 从 "%RETRY% + consumerGroup" 改回 RETRY_TOPIC属性中的真正的Topic。
 ```java
