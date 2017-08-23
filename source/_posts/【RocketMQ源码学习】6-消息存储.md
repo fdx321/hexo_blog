@@ -1,6 +1,8 @@
 title: 【RocketMQ源码学习】6-消息存储
 date: 2017-08-22 17:15:22
 tags:
+- Java
+- RocketMQ
 ---
 Store 在写消息之前会做一些校验（broker的角色、Topic的长度、消息Properties的长度等），然后交给 CommitLog去处理，CommitLog的整体流程如下：
 1. 设置一些信息到 MessageExtBrokerInner 对象中（storeTimestamp、message body CRC等）
