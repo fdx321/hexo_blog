@@ -77,7 +77,7 @@ public class DefaultFooService{
 |PROPAGATION_NOT_SUPPORTED|以非事务方式执行操作，如果当前存在事务，就把当前事务挂起|
 |PROPAGATION_NEVER|以非事务方式执行，如果当前存在事务，则抛出异常|
 |PROPAGATION_NESTED|如果当前存在事务，则在嵌套事务内执行。如果当前没有事务，则执行与 PROPAGATION_REQUIRED 类似的操作|
-其他的都还好理解，后面结合例子重点介绍下PROPAGATION_REQUIRED，PROPAGATION_REQUIRES_NEW，PROPAGATION_NESTED三种隔离级别。
+其他的都还好理解，后面结合例子重点介绍下PROPAGATION_REQUIRED，PROPAGATION_REQUIRES_NEW，PROPAGATION_NESTED三种传播级别。
 表结构和原始数据
 ```sql
 mysql> select * from test;
