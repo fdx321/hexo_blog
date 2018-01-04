@@ -6,7 +6,7 @@ tags:
 - RocketMQ
 - Kafka
 ---
-以下所有的分析都是基于 RocketMQ (tag rocketmq-all-4.1.0-incubating) 和 Kafka (tag 0.10.0.0)，对于 Kafka，涉及 Producer 和 Consumer 的，都是基于
+以下所有的分析都是基于 RocketMQ (tag rocketmq-all-4.1.0-incubating) 和 Kafka (tag 0.10.0.0)，对于 Kafka，涉及 Producer 和 Consumer 的，都是基于该版本的 Java API.
 过去大半年时间断断续续看了很多 RocketMQ 和 Kafka 的源码，下面从源码的角度分析下两者的共同点/不同点。
 
 ### **部署和存储模型**
